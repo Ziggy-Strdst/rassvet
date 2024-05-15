@@ -1,0 +1,75 @@
+<section class="calc">
+  <div class="calc__container">
+    <h2 class="calc__title h2-title">Рассчитать стоимость лечения</h2>
+    <form action="" class="calc__form">
+      <div class="calc__form-body">
+        <select
+          class="calc__select"
+          name="f_sex"
+          data-class-modif="form"
+          data-pseudo-label="Пол ребенка"
+        >
+          <option value="1" selected>Мальчик</option>
+          <option value="2">Девочка</option>
+        </select>
+        <div class="calc__input-body calc__input-name">
+          <label for="age">Возраст</label>
+          <input id="age" name="f_age" type="text" placeholder="1" />
+        </div>
+        <select
+          class="calc__select"
+          name="f_problem"
+          data-class-modif="form"
+          data-pseudo-label="Какая у вас проблема?"
+        >
+          <option value="Алкоголизм" selected>Алкоголизм</option>
+          <option value="2">Пункт №2</option>
+          <option value="3">Пункт №3</option>
+          <option value="4">Пункт №4</option>
+        </select>
+        <select
+          class="calc__select"
+          name="f_relatives"
+          data-class-modif="form"
+          data-pseudo-label="Кем вы приходитесь ребенку?"
+        >
+          <option value="Мама/Папа" selected>Мама/Папа</option>
+          <option value="Тетя/Дядя">Тетя/Дядя</option>
+          <option value="Бабушка/Дедушка">Бабушка/Дедушка</option>
+          <option value="Брат/Сестра">Брат/Сестра</option>
+          <option value="Друг/Подруга">Друг/Подруга</option>
+          <option value="Другое">Другое</option>
+        </select>
+        <div class="calc__input-body">
+          <label for="name">Ваше имя</label>
+          <input type="text" name="f_name" placeholder="Имя" id="name" />
+        </div>
+        <div class="calc__input-body">
+          <label for="phone">Ваш телефон</label>
+          <input
+            type="tel"
+            name="f_phone"
+            placeholder="+7 (9__) ___-__-__"
+            id="phone"
+          />
+        </div>
+        <button class="calc__button" type="submit">Заказать звонок</button>
+      </div>
+      <div class="form__consent-body calc__consent-body">
+        <input
+          class="form__checkbox"
+          type="checkbox"
+          name="consent"
+          value="consent"
+          checked=""
+        />
+        <label class="form__consent-label" for="consent"
+          >Даю согласие на
+          <a class="form__consent-link" href=""
+            >обработку персональных данных</a
+          ></label
+        >
+      </div>
+    </form>
+  </div>
+</section>

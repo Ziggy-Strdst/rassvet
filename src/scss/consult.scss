@@ -1,0 +1,149 @@
+.consult {
+  margin-bottom: 130px;
+  padding-top: 107px;
+  padding-bottom: 87px;
+  background: url('../img/consult/consult-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 50px;
+    padding: 40px 0;
+    background: url('../img/consult/consult-bg-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+  }
+
+  // .consult__body
+  &__body {
+  }
+
+  // .consult__container
+  &__container {
+  }
+
+  // .consult__title
+  &__title {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+  }
+
+  // .consult__subtitle
+  &__subtitle {
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 19px;
+    line-height: 120%;
+    letter-spacing: 0.57px;
+    opacity: 0.5;
+    text-align: center;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 30px;
+      font-size: 16px;
+      letter-spacing: normal;
+    }
+  }
+
+  // .consult__form
+  &__form {
+    margin: 0 auto;
+    max-width: 462px;
+    position: relative;
+
+    &::before {
+      content: url('../img/consult/decor1.png');
+      position: absolute;
+      top: 10%;
+      left: -30%;
+
+      @media (max-width: $mobile) {
+        top: 25%;
+      }
+    }
+
+    &::after {
+      content: url('../img/consult/decor2.png');
+      position: absolute;
+      top: -60%;
+      right: -40%;
+
+      @media (max-width: $mobile) {
+        top: -10%;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      max-width: 260px;
+    }
+  }
+
+  &__form .form__consent-label {
+    color: #fff;
+
+    @media (max-width: $mobile) {
+      margin: 0 auto;
+    }
+  }
+
+  &__form .form__consent-body {
+    @media (max-width: $mobile) {
+      max-width: 230px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.form {
+  // .form__body
+  &__body {
+  }
+
+  // .form__input
+  &__input {
+  }
+
+  // .form__btn
+  &__btn {
+  }
+
+  // .form__btn-mobile
+  &__btn-mobile {
+  }
+
+  // .form__consent-body
+  &__consent-body {
+  }
+
+  // .form__checkbox
+  &__checkbox {
+  }
+
+  // .form__consent-label
+  &__consent-label {
+  }
+
+  // .form__consent-link
+  &__consent-link {
+  }
+}
+
+.main {
+  // .main__button
+  &__button {
+  }
+
+  // .main__button-inner
+  &__button-inner {
+  }
+}

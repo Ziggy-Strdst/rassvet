@@ -1,0 +1,80 @@
+.price {
+  background: url('../img/price/price-bg.png');
+  margin-bottom: 130px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 40px;
+  }
+  // .price__container
+  &__container {
+  }
+
+  // .price__title
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  // .price__body
+  &__body {
+    border-radius: 20px;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  // .price__item
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 80px;
+    font-size: 20px;
+
+    &:nth-child(2n + 1) {
+      background: #f3f4f9;
+    }
+
+    @media (max-width: $mobile) {
+      height: 44px;
+      padding: 20px 15px;
+      font-size: 12px;
+    }
+  }
+}
+
+.item-price {
+  // .item-price__name
+  &__name {
+    text-wrap: balance;
+  }
+
+  // .item-price__title
+  &__title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+    }
+  }
+
+  // .item-price__price
+  &__price {
+    color: #4a96ef;
+    text-wrap: nowrap;
+  }
+
+  // .item-price__subtitle
+  &__subtitle {
+    color: #4a96ef;
+    font-size: 20px;
+    font-weight: 700;
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+    }
+  }
+}

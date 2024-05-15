@@ -1,0 +1,166 @@
+// Заголовки, общие БЄМ блоки и прочее...
+.h2-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 100%;
+
+  @media (max-width: $mobile) {
+    font-size: 26px;
+  }
+}
+.label {
+  max-width: max-content;
+  margin-bottom: 20px;
+  padding: 13px 17px;
+  border-radius: 50px;
+  border: 1px solid #eaeaf2;
+  background: #f3f4f9;
+
+  color: #4a96ef;
+  font-size: 19px;
+  font-weight: 700;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}
+
+.main__button {
+  display: flex;
+  align-items: center;
+  min-width: 175px;
+  min-height: 50px;
+  border-radius: 50px;
+  border: 2px solid #4a96ef;
+  background-color: white;
+  text-align: center;
+
+  cursor: pointer;
+  padding: 1px;
+  position: relative;
+
+  &:after {
+    content: url('../img/icons/icon-arrow-right.svg');
+    position: absolute;
+    right: 10px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 0;
+      visibility: hidden;
+    }
+    .main__button-inner {
+      width: 100%;
+
+      &::after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.main__button-inner {
+  padding: 15px;
+  border-radius: 50px;
+  background: #4a96ef;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  white-space: nowrap;
+  text-align: center;
+  color: #fff;
+  width: 149px;
+
+  transition: all 0.2s ease 0s;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: url('../img/icons/icon-arrow-right-white.svg');
+    position: absolute;
+    right: 15px;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.calc__button {
+  padding: 33px;
+  border-radius: 20px;
+  border: 2px solid #4a96ef;
+  background: #4a96ef;
+  color: #fff;
+  text-align: center;
+  text-wrap: nowrap;
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  transition: all 0.2s ease 0s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+
+  &::after {
+    content: '';
+    background-image: url('../img/icons/icon-arrow-right-white-big.svg');
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover {
+    &::after {
+      background-image: url('../img/icons/icon-arrow-right-big.svg');
+    }
+    border-radius: 20px;
+    border: 2px solid #4a96ef;
+    background: #fff;
+    box-shadow: 0px 0px 14px 0px rgba(102, 167, 243, 0.2);
+    color: #4a96ef;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 13px;
+  }
+}
+
+.anchor__btn {
+  border-radius: 100%;
+  background: #4a96ef;
+  border: 2px solid #fff;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  & span {
+    transition: transform 0.5s ease-in;
+  }
+
+  &:hover {
+    & span {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.swiper-button-disabled {
+  opacity: 0.6;
+}

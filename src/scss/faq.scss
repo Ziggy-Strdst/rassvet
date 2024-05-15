@@ -1,0 +1,177 @@
+.faq {
+  padding-bottom: 130px;
+  background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #f5f5fa 100%);
+
+  @media (max-width: $mobile) {
+    padding-bottom: 30px;
+  }
+
+  // .faq__container
+  &__container {
+  }
+
+  // .faq__label
+  &__label {
+  }
+
+  // .faq__body
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 30px;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__body-reverse {
+    @media (max-width: $tablet) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  // .faq__img-block
+  &__img-block {
+    min-width: 542px;
+
+    @media (max-width: $mobile) {
+      min-width: 100%;
+    }
+  }
+
+  // .faq__faq-block
+  &__faq-block {
+    width: 100%;
+  }
+
+  // .faq__title
+  &__title {
+    margin-bottom: 30px;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .faq__img
+  &__img {
+    border-radius: 20px;
+    border: 33px solid #f3f4f9;
+    max-width: 100%;
+    height: auto;
+
+    @media (max-width: $mobile) {
+      border: 15px solid #f3f4f9;
+    }
+  }
+
+  // ССАНЫЕ ИКОНКИ
+  .faq__img-body {
+    display: inline-block;
+  }
+
+  // .faq__img-1
+  &__img-1 {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -4%;
+      right: -4%;
+      width: 113px;
+      height: 113px;
+      border-radius: 10px;
+      background-color: #4a96ef;
+      background-image: url('../img/faq/icon1.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      @media (max-width: $mobile) {
+        right: 10%;
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+
+  // .faq__img-2
+  &__img-2 {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -4%;
+      left: -4%;
+      width: 113px;
+      height: 113px;
+      border-radius: 10px;
+      background-color: #ffac4a;
+      background-image: url('../img/faq/icon2.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      @media (max-width: $mobile) {
+        left: 10%;
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+  // .faq__img-3
+  &__img-3 {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -4%;
+      right: -4%;
+      width: 113px;
+      height: 113px;
+      border-radius: 10px;
+      background-color: #4a96ef;
+      background-image: url('../img/faq/icon3.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      @media (max-width: $mobile) {
+        right: 10%;
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+
+  // .faq__img-4
+  &__img-4 {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -4%;
+      left: -4%;
+      width: 113px;
+      height: 113px;
+      border-radius: 10px;
+      background-color: #ffac4a;
+      background-image: url('../img/faq/icon4.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      @media (max-width: $mobile) {
+        left: 10%;
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+}

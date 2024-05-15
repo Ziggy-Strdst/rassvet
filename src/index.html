@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  @@include('html/_head.htm',{ "title":"HomePage" })
+  <body>
+    <div class="wrapper">
+      <main class="page">
+        <section class="hero">
+          <div class="header__mobile"></div>
+          <div class="hero__container">
+            @@include('html/_header.htm',{}) @@include('html/_hero.htm',{})
+          </div>
+        </section>
+        @@include('html/_about.htm',{}) @@include('html/_facts.htm',{})
+        @@include('html/_include.htm',{}) @@include('html/_price.htm',{})
+        @@include('html/_team.htm',{}) @@include('html/_consult.htm',{})
+        @@include('html/_reviews.htm',{}) @@include('html/_conditions.htm',{})
+        @@include('html/_calc.htm',{}) @@include('html/_faq.htm',{})
+        @@include('html/_online.htm',{}) @@include('html/_text.htm',{})
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
+</html>

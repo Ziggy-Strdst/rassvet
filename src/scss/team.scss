@@ -1,0 +1,136 @@
+.team {
+  margin-bottom: 130px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 40px;
+  }
+  // .team__container
+  &__container {
+  }
+
+  // .team__label
+  &__label {
+  }
+
+  // .team__top
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  // .team__title
+  &__title {
+  }
+
+  // .team__btn
+  &__btn {
+    @media (max-width: $mobile) {
+      margin: 0 auto;
+    }
+  }
+
+  // .team__slider
+  &__slider {
+    @media (min-width: $tablet) {
+      padding-right: 2px !important;
+    }
+  }
+
+  // .team__wrapper
+  &__wrapper {
+    @media (max-width: $tablet) {
+      padding-bottom: 112px;
+    }
+  }
+
+  &__wrapper .team__slide:nth-child(odd) img {
+    padding-top: 10px;
+  }
+  &__wrapper .team__slide:nth-child(even) img {
+    padding-bottom: 10px;
+  }
+
+  // .team__slide
+  &__slide {
+  }
+
+  // .team__slide-img
+  &__slide-img {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #000;
+  }
+
+  // .team__slide-name
+  &__slide-name {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  // .team__slide-description
+  &__slide-description {
+    font-size: 16px;
+    line-height: 120%;
+    opacity: 0.5;
+
+    max-width: 314px;
+  }
+}
+
+.main {
+  // .main__button
+
+  &__button {
+  }
+
+  // .main__button-inner
+
+  &__button-inner {
+  }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+// team slider btns
+.team-slider-btn {
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  box-shadow: 0px 0px 14px 0px rgba(102, 167, 243, 0.2);
+  font-size: 18px;
+  position: absolute;
+  top: 25%;
+  z-index: 1;
+
+  @media (max-width: $mobile) {
+    bottom: 80px;
+    top: auto;
+  }
+}
+.team-button-prev {
+  left: 5px;
+  top: 33%;
+  @media (max-width: $mobile) {
+    left: 33%;
+    top: auto;
+  }
+}
+.team-button-next {
+  right: 5px;
+  top: 33%;
+  @media (max-width: $mobile) {
+    right: 33%;
+    top: auto;
+  }
+}
