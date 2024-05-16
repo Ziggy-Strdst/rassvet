@@ -251,8 +251,11 @@
 
     @media (max-width: $tablet) {
       flex-direction: column;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      justify-content: start;
       gap: 33px;
-      padding: toRem(25) toRem(45) toRem(15) toRem(15);
+      padding: toRem(25) toRem(45) toRem(25) toRem(15);
       border: 0.8px solid #e7e8ea;
       border-radius: 10px;
     }
