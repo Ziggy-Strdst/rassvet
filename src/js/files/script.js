@@ -12,7 +12,6 @@ if (menuLink) {
       e.preventDefault();
       link.classList.toggle('link-active');
       link.nextElementSibling.classList.toggle('sub-active');
-      console.log(link.nextElementSibling);
     });
   });
 }

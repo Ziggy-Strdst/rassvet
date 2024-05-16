@@ -102,6 +102,7 @@ body::after {
   box-shadow: -29px 0px 40px 0px rgba(0, 0, 0, 0.15);
 
   @media (max-width: $tablet) {
+    padding: 40px 30px 30px 30px;
     text-align: center;
   }
 }
