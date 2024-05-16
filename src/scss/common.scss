@@ -172,3 +172,46 @@
 .swiper-button-disabled {
   opacity: 0.6;
 }
+
+// FIX AFTER UPLOAD
+.webp .hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.webp .hero__body-right::after {
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+@media (min-width: 20em) and (max-width: 85.625em) {
+  @supports (
+    gap: clamp(0.1875rem, -0.3839285714rem + 2.8571428571vw, 2.0625rem)
+  ) {
+    .menu__list {
+      gap: 33px !important;
+    }
+  }
+}
+
+.webp .consult {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+}
+
+@media (max-width: 47.99875em) {
+  .webp .consult {
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.webp .reviews__container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
