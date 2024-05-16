@@ -214,4 +214,8 @@
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+
+  @media (max-width: $mobile) {
+    background: none !important;
+  }
 }
