@@ -175,15 +175,15 @@
 
 // FIX AFTER UPLOAD
 .webp .hero {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: bottom !important;
 }
 
 .webp .hero__body-right::after {
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  position: absolute !important;
 }
 
 @media (min-width: 20em) and (max-width: 85.625em) {
@@ -197,21 +197,21 @@
 }
 
 .webp .consult {
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 40px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  border-radius: 40px !important;
 }
 
 @media (max-width: 47.99875em) {
   .webp .consult {
-    border-radius: 20px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    border-radius: 20px !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
   }
 }
 
 .webp .reviews__container {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 }
