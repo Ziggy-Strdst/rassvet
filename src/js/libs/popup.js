@@ -309,11 +309,9 @@ class Popup {
             },
           })
         );
-        this.popupLogging(`Открыл попап`);
+        // this.popupLogging(`Открыл попап`);
       } else
-        this.popupLogging(
-          `Ей, такого попа нет. Проверьте корректность ввода. `
-        );
+        this.popupLogging(`Такого попа нет. Проверьте корректность ввода. `);
     }
   }
   close(selectorValue) {
@@ -448,7 +446,7 @@ class Popup {
   }
   // Функция вывода в консоль
   popupLogging(message) {
-    this.options.logging ? FLS(`[Попап]: ${message}`) : null;
+    this.options.logging ? null : null;
   }
 }
 // Запускаем и добавляем в объект модулей
