@@ -22,9 +22,3 @@ const textContainer = document.querySelector('.text__container');
 if (textContainer) {
   textContainer.lastElementChild.style.marginBottom = '0';
 }
-
-// кнопка якорь в футере
-
-document.querySelector('.anchor__btn').addEventListener('click', function () {
-  window.scrollTo(0, 0);
-});
