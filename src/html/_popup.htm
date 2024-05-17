@@ -11,7 +11,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
-        <form action="" class="form">
+        <form action="" class="form" data-popup-message="#success" data-dev>
           <div class="form__body">
             <input
               type="tel"
@@ -33,7 +33,8 @@
               type="checkbox"
               name="consent"
               value="consent"
-              checked=""
+              checked
+              required
             />
             <label class="form__consent-label" for="consent"
               >Даю согласие на
@@ -43,6 +44,25 @@
             >
           </div>
         </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- success -->
+
+<div id="success" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <img src="@img/popup/icon-close.svg" alt="Кнопка закрыть" />
+      </button>
+      <img class="popup__img" src="@img/popup/1.png" alt="Фото оператора" />
+      <div class="popup__form">
+        <h2 class="popup__title h2-title">Заявка успешно отправлена</h2>
+        <p class="popup__text">
+          Ожидайте звонка, скоро наш оператор с Вами свяжется
+        </p>
       </div>
     </div>
   </div>

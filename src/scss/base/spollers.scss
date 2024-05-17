@@ -28,6 +28,8 @@
   display: flex;
   align-items: center;
 
+  -webkit-tap-highlight-color: transparent;
+
   @media (max-width: $mobile) {
     padding: toRem(15);
     padding-right: toRem(45);
