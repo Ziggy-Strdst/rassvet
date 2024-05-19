@@ -35,6 +35,11 @@
 
   // .calc__form
   &__form {
+    & input:focus {
+      &::placeholder {
+        opacity: 0;
+      }
+    }
   }
 
   // .calc__select
