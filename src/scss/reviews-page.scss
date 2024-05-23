@@ -1,0 +1,31 @@
+.reviews-page {
+  margin-bottom: 130px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 40px;
+  }
+  // .reviews-page__container
+  &__container {
+  }
+
+  // .reviews-page__body
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.reviews-page .reviews__slide {
+  border-radius: 23px;
+  border: 2px solid #e8e7ef;
+  padding: 30px;
+}
