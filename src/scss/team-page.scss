@@ -1,4 +1,9 @@
 .team-page {
+  margin-bottom: 130px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 40px;
+  }
   // .team-page__container
   &__container {
   }
