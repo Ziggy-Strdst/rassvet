@@ -1,17 +1,12 @@
-.reviews-page {
-  margin-bottom: 130px;
-
-  @media (max-width: $mobile) {
-    margin-bottom: 40px;
-  }
-  // .reviews-page__container
+.team-page {
+  // .team-page__container
   &__container {
   }
 
-  // .reviews-page__body
+  // .team-page__body
   &__body {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 
     @media (max-width: $tablet) {
@@ -31,9 +26,20 @@
     }
   }
 }
+.team {
+  // .team__slide
+  &__slide {
+  }
 
-.reviews-page .reviews__slide {
-  border-radius: 23px;
-  border: 2px solid #e8e7ef;
-  padding: 30px;
+  // .team__slide-img
+  &__slide-img {
+  }
+
+  // .team__slide-name
+  &__slide-name {
+  }
+
+  // .team__slide-description
+  &__slide-description {
+  }
 }
