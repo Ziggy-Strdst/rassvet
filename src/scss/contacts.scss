@@ -1,0 +1,132 @@
+.contacts {
+  // .contacts__title
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  // .contacts__body
+  &__body {
+  }
+
+  // .contacts__contacts
+  &__contacts {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+
+  // .contacts__contacts-item
+  &__contacts-item {
+    padding: 22px;
+    border-radius: 23px;
+    border: 2px solid #e8e7ef;
+    text-align: center;
+    background: #f5f5fa;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    line-height: 110%;
+    text-wrap: balance;
+
+    & a {
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  // .contacts__contacts-title
+  &__contacts-title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  // .contacts__contacts-phone
+  &__contacts-phone {
+  }
+
+  // .contacts__contacts-address
+  &__contacts-address {
+  }
+
+  // .contacts__contacts--email
+  &__contacts--email {
+  }
+
+  // .contacts__map
+  &__map {
+    margin-bottom: 60px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+
+.contacts .hero__form {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.contscts {
+  // .contscts__container
+  &__container {
+  }
+}
+
+.hero {
+  // .hero__form
+  &__form {
+  }
+}
+.form {
+  // .form__body
+  &__body {
+  }
+
+  // .form__input
+  &__input {
+  }
+
+  // .form__btn
+  &__btn {
+  }
+
+  // .form__btn-mobile
+  &__btn-mobile {
+  }
+
+  // .form__consent-body
+  &__consent-body {
+  }
+
+  // .form__checkbox
+  &__checkbox {
+  }
+
+  // .form__consent-label
+  &__consent-label {
+  }
+
+  // .form__consent-link
+  &__consent-link {
+  }
+}
+.tel {
+}
+.main {
+  // .main__button
+  &__button {
+  }
+
+  // .main__button-inner
+  &__button-inner {
+  }
+}
