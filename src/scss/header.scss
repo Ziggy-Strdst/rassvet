@@ -114,7 +114,6 @@
 
   // .header__city
   &__city {
-    cursor: pointer;
     &::before {
       content: url('../img/icons/icon-pin.svg');
     }

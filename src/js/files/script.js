@@ -69,3 +69,20 @@ window.addEventListener('DOMContentLoaded', function () {
     input.addEventListener('keydown', mask, false);
   });
 });
+
+// Выбор города
+
+document.querySelectorAll('.regions__link').forEach(function (element) {
+  element.addEventListener('click', function () {
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/ajax/', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = function () {
+      if (this.readyState === 4 && this.status === 200) {
+        document.querySelector('.city__list').innerHTML = this.responseText;
+        console.log('AJAX SUKA PERDOLE');
+      }
+    };
+    xhr.send('city=city');
+  });
+});
