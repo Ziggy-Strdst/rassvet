@@ -71,18 +71,24 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 // Выбор города
+const searchInput = document.getElementById('searchInput');
+const resultsDiv = document.getElementById('results');
 
-document.querySelectorAll('.regions__link').forEach(function (element) {
-  element.addEventListener('click', function () {
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', '/ajax/', true);
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.onreadystatechange = function () {
-      if (this.readyState === 4 && this.status === 200) {
-        document.querySelector('.city__list').innerHTML = this.responseText;
-        console.log('AJAX SUKA PERDOLE');
-      }
-    };
-    xhr.send('city=city');
-  });
+searchInput.addEventListener('keyup', function () {
+  const searchText = searchInput.value.trim();
+
+  fetch('city.php?q=' + encodeURIComponent(searchText))
+    .then((response) => response.json())
+    .then((data) => {
+      resultsDiv.innerHTML = '';
+      data.forEach((city) => {
+        const link = document.createElement('a');
+        let updatedHref = `https://${city.Domain}`;
+        link.href = updatedHref;
+        link.setAttribute('class', 'city__item');
+        link.textContent = city.Catalogue_Name;
+        resultsDiv.appendChild(link);
+      });
+    })
+    .catch((error) => console.error('Error fetching data:', error));
 });
