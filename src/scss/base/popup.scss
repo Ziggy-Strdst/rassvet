@@ -134,3 +134,111 @@ body::after {
     padding: 0 40px;
   }
 }
+
+// Форма города
+
+#city .popup__close {
+  top: -35px;
+  right: -35px;
+
+  @media (max-width: $tablet) {
+    top: -45px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#city .h2-title {
+  margin-bottom: 0;
+}
+
+.city__body {
+  padding: 50px 86px;
+  border-radius: 20px;
+  border: 7px solid rgba(255, 255, 255, 0);
+
+  background: #f5f5fa;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+
+  @media (max-width: $mobile) {
+    padding: 30px 15px;
+    gap: 15px;
+  }
+}
+
+.city__form {
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+}
+
+.city__input {
+  border-radius: 50px;
+  background: #fff;
+
+  box-shadow: 0px 0px 14px 0px rgba(102, 167, 243, 0.2);
+  min-width: 462px;
+  padding: 19px;
+  outline: none;
+
+  font-size: 20px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $mobile) {
+    min-width: auto;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+  }
+}
+
+.city__list {
+  padding: 30px 28px;
+  border-radius: 10px;
+  background: #fff;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 28px;
+  row-gap: 30px;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  width: 100%;
+
+  @media (max-width: $mobile) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 22px;
+    row-gap: 10px;
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 15px */
+    letter-spacing: -0.3px;
+  }
+}
+
+.city__item {
+  border-bottom: 0.8px solid #e7e8ea;
+  padding-bottom: 30px;
+
+  @media (max-width: $mobile) {
+    padding-bottom: 10px;
+  }
+}
