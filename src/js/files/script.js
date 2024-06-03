@@ -77,7 +77,7 @@ const resultsDiv = document.getElementById('results');
 searchInput.addEventListener('keyup', function () {
   const searchText = searchInput.value.trim();
 
-  fetch('city.php?q=' + encodeURIComponent(searchText))
+  fetch('/city.php?q=' + encodeURIComponent(searchText))
     .then((response) => response.json())
     .then((data) => {
       resultsDiv.innerHTML = '';
