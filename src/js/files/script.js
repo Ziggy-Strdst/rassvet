@@ -7,13 +7,15 @@ import { flsModules } from './modules.js';
 const menuLink = document.querySelectorAll('.arrow');
 
 if (menuLink) {
-  menuLink.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      link.classList.toggle('link-active');
-      link.nextElementSibling.classList.toggle('sub-active');
+  if (window.innerWidth < 991) {
+    menuLink.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        link.classList.toggle('link-active');
+        link.nextElementSibling.classList.toggle('sub-active');
+      });
     });
-  });
+  }
 }
 
 // Убрать марджин последнего элемента в текстовом блоке
